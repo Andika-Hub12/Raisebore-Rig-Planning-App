@@ -20,4 +20,4 @@ unavailable rods to use. Combined with the length for each rod type, you can com
 for the job.
 
 So, you will roughly need 3 files as input comprising Rig Schedule, Rig Capability, and Rod Inventory which
-I will attach the excel file for illustration purpose.
+I have attached the excel file for illustration purpose.
