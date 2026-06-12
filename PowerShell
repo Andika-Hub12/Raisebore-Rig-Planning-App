@@ -1,0 +1,29 @@
+# Step 1: Create the virtual environment (once)
+python -m venv .venv
+
+# Step 2: Activate it (every new terminal)
+.venv\Scripts\Activate.ps1
+
+# Step 2b: Only if activation is blocked, run before step 2
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+
+# Step 3: Install the planner's libraries (once)
+pip install pandas openpyxl
+
+# Step 4: Build the Excel database or you don't need this if you have integrated database ready
+python create_database.py
+
+# Step 5: Run the text planner
+python rig_planner.py
+
+# Step 6: Run the app window
+python rig_planner_gui.py
+
+# Step 7: Install the packaging tool (once)
+pip install pyinstaller
+
+# Step 8: Build the .exe (data bundled in)
+pyinstaller --onefile --windowed --add-data "rig_database.xlsx;." rig_planner_gui.py
+
+# Step 8b: Only if you want the database (.xlsx) to be regularly updated
+pyinstaller --onefile --windowed rig_planner_gui.py
