@@ -19,4 +19,5 @@ looking for available supported rod(s) and rod type(s). The inventory file tells
 unavailable rods to use. Combined with the length for each rod type, you can compare the required meters/length 
 for the job.
 
-So, you will roughly need 3 files as input comprising Rig Schedule, Rig Capability, and Rod Inventory.
+So, you will roughly need 3 files as input comprising Rig Schedule, Rig Capability, and Rod Inventory which
+I will attach the excel file for ilustration purpose.
